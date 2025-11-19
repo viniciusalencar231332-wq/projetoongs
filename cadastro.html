@@ -1,0 +1,65 @@
+<!doctype html>
+<label for="nascimento">Data de nascimento*</label>
+<input id="nascimento" name="nascimento" type="date" required>
+</fieldset>
+
+
+<fieldset>
+<legend>Endereço</legend>
+
+
+<label for="endereco">Endereço*</label>
+<input id="endereco" name="endereco" type="text" required>
+
+
+<label for="cep">CEP*</label>
+<input id="cep" name="cep" type="text" required maxlength="9" pattern="\d{5}-\d{3}" placeholder="00000-000">
+
+
+<label for="cidade">Cidade*</label>
+<input id="cidade" name="cidade" type="text" required>
+
+
+<label for="estado">Estado*</label>
+<select id="estado" name="estado" required>
+<option value="">Selecione</option>
+<option value="PR">PR</option>
+<option value="SP">SP</option>
+<option value="RS">RS</option>
+<!-- adicionar demais unidades federativas -->
+</select>
+</fieldset>
+
+
+<fieldset>
+<legend>Preferências</legend>
+<label>
+<input type="checkbox" name="voluntario" value="sim"> Quero ser voluntário
+</label>
+<label>
+<input type="checkbox" name="newsletter" value="sim"> Receber newsletter
+</label>
+</fieldset>
+
+
+<button type="submit">Enviar cadastro</button>
+</form>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; ONG Exemplo</p>
+</div>
+</footer>
+
+
+<script src="js/masks.js"></script>
+<script>
+// validação adicional (ex.: mostrar mensagens customizadas)
+(function(){
+const form = document.getElementById('form-cadastro');
+form.addEventListener('submit', function(e){
+if(!form.checkValidity()){
+// permite que o navegador mostre mensagens nativas
+e.preventDefault();
