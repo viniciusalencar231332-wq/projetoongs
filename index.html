@@ -1,4 +1,23 @@
 <!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONG Exemplo - Início</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <img src="imagens/ong.jpg" alt="Imagem representando a ONG" class="hero-img">
+    <h1>ONG Exemplo</h1>
+</header>
+
+<main>
+
+<section class="valores container" aria-labelledby="valores-title">
+<h2 id="valores-title">Nossos Valores</h2>
+<ul>
 <li>Transparência</li>
 <li>Inclusão</li>
 <li>Impacto medível</li>
@@ -8,20 +27,21 @@
 
 <section class="destaques container" aria-labelledby="destaques-title">
 <h2 id="destaques-title">Projetos em Destaque</h2>
+
 <article class="card" aria-labelledby="proj1-title">
-<img src="images/projeto1.jpg" alt="Crianças em atividade educacional" class="card-img">
+<img src="imagens/projeto1.jpg" alt="Crianças em atividade educacional" class="card-img">
 <h3 id="proj1-title">Projeto Educação+</h3>
 <p>Capacitação para jovens em áreas urbanas com foco em tecnologia e empreendedorismo.</p>
 <a href="projetos.html#educacao">Saiba mais</a>
 </article>
 
-
 <article class="card" aria-labelledby="proj2-title">
-<img src="images/voluntarios.jpg" alt="Voluntários em ação" class="card-img">
+<img src="imagens/voluntarios.jpg" alt="Voluntários em ação" class="card-img">
 <h3 id="proj2-title">Rede de Voluntariado</h3>
 <p>Conectamos voluntários a microprojetos locais — participe você também.</p>
 <a href="projetos.html#voluntariado">Quero ser voluntário</a>
 </article>
+
 </section>
 
 
@@ -48,10 +68,10 @@ E-mail: <a href="mailto:contato@ongexemplo.org">contato@ongexemplo.org</a>
 </div>
 </footer>
 
-
 <script>
-// inserir ano automático
 document.getElementById('ano').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
+
