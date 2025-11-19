@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projetos — ONG Exemplo</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<a href="index.html"><img src="images/logo.png" alt="Logo ONG Exemplo" class="logo"></a>
+<nav aria-label="Navegação principal">
+<ul class="nav-list">
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastre-se</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container" aria-labelledby="projetos-title">
+<h1 id="projetos-title">Projetos Sociais</h1>
+
+
+<section id="educacao" aria-labelledby="educacao-title">
+<h2 id="educacao-title">Educação+</h2>
+<p>O projeto Educação+ oferece oficinas gratuitas de capacitação técnica e formação cidadã para jovens.</p>
+<figure>
+<img src="images/projeto1.jpg" alt="Oficina de tecnologia" />
+<figcaption>Oficina do projeto Educação+</figcaption>
+</figure>
+<p>Indicadores de impacto: matrícula, participação, taxa de empregabilidade após 6 meses.</p>
+</section>
+
+
+<section id="voluntariado" aria-labelledby="voluntariado-title">
+<h2 id="voluntariado-title">Rede de Voluntariado</h2>
+<p>Cadastre-se como voluntário e participe conforme a sua disponibilidade.</p>
+<ul>
+<li>Oportunidades locais e remotas</li>
+<li>Formação online para voluntários</li>
+<li>Certificado digital após 20 horas de atuação</li>
+</ul>
+</section>
+
+
+<section id="doacoes" aria-labelledby="doacoes-title">
+<h2 id="doacoes-title">Como doar</h2>
+<p>Explicamos os diferentes canais de doação, prestação de contas e metas de campanha.</p>
+<p><a href="cadastro.html">Cadastre-se</a> para receber novidades sobre campanhas.</p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="ano2"></span> ONG Exemplo.</p>
+</div>
+</footer>
+
+
+<script>
+document.getElementById('ano2').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
